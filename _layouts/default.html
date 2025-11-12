@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
+      /* Base layout */
       body {
         background-color: #0d1117;
         color: #e6edf3;
@@ -15,43 +19,78 @@
         margin: 40px auto;
         padding: 0 20px;
       }
+
       h1, h2, h3 {
         color: #58a6ff;
       }
+
       a {
         color: #79c0ff;
         text-decoration: none;
       }
+
       a:hover {
         text-decoration: underline;
       }
-      code {
-        background: #161b22;
-        padding: 3px 6px;
-        border-radius: 4px;
-        font-size: 0.9em;
-      }
+
       blockquote {
         border-left: 4px solid #30363d;
         padding-left: 15px;
         color: #8b949e;
         font-style: italic;
       }
+
       .section {
         margin-top: 50px;
       }
+
       footer {
         text-align: center;
         margin-top: 60px;
         font-size: 0.9em;
         color: #8b949e;
       }
+
+      /* Inline code */
+      code {
+        background: #161b22;
+        color: #c9d1d9;
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.9em;
+      }
+
+      /* Code blocks */
+      pre {
+        background: #161b22;
+        color: #c9d1d9;
+        padding: 16px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin: 20px 0;
+        border: 1px solid #30363d;
+      }
+
+      /* Syntax highlighting colors (GitHub Dark style) */
+      .highlight .k, .highlight .kd, .highlight .kn { color: #ff7b72; } /* keywords */
+      .highlight .s, .highlight .s1, .highlight .s2 { color: #a5d6ff; } /* strings */
+      .highlight .n, .highlight .p { color: #c9d1d9; } /* normal text/punctuation */
+      .highlight .c { color: #8b949e; font-style: italic; } /* comments */
+      .highlight .o { color: #ff7b72; } /* operators */
+      .highlight .nb { color: #79c0ff; } /* builtins */
+      .highlight .mi { color: #79c0ff; } /* numbers */
     </style>
   </head>
+
   <body>
     <main>
       {{ content }}
     </main>
+
     <footer>
       © {{ "now" | date: "%Y" }} Hasan Alizada
     </footer>
