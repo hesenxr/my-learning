@@ -1,3 +1,5 @@
 title: Hasan Alizada
 description: My learning notes and projects
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
