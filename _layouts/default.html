@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #0d1117;
+        color: #e6edf3;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.7;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      h1, h2, h3 {
+        color: #58a6ff;
+      }
+      a {
+        color: #79c0ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      code {
+        background: #161b22;
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      blockquote {
+        border-left: 4px solid #30363d;
+        padding-left: 15px;
+        color: #8b949e;
+        font-style: italic;
+      }
+      .section {
+        margin-top: 50px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 0.9em;
+        color: #8b949e;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      © {{ "now" | date: "%Y" }} Hasan Alizada
+    </footer>
+  </body>
+</html>
