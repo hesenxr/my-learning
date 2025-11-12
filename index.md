@@ -19,7 +19,7 @@ You can contact me at **hasan.alizada.233@gmail.com**
 ## 📚 University Notes
 Here are some of my course notes and summaries:
 
-- [C# Fundamentals & Syntax Mastery](./c#-basics)
+- [C# Fundamentals & Syntax Mastery](./csharp-basics)
 - [Computer Networks](#)
 - [Operating Systems](#)
 - [Mathematical Logic](#)
